@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family:'Roboto', sans-serif;
+  background-image:linear-gradient(to left,purple,#06274b);
+  font-family: 'Nunito', sans-serif;
+}
+.names{
+      position:relative;
+      top:10rem;
+      left:45rem;
+      font-size:1.5rem;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-weight:lighter;
+    text-transform: uppercase;
+}
+.logo{
+      height:9rem; 
+      margin-top:1rem;       
+}

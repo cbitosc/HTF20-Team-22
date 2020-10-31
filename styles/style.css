@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+  --color-background-primary:#222831;
+  --color-background-secondary:#393e46;
+  --color-background-primary-light:#393e46d7;
+  --color-heading:#00adb5;
+  --color-text:#eeeeee;
+  }
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family:'Roboto', sans-serif;
+  background-color:var(--color-background-primary);
+}
+h1{
+font-family: 'Comfortaa', cursive;  text-align:center;
+  margin-top:2.1rem;
+  margin-bottom:100px;
+  color:var(--color-text);
+
+}
+a{
+  text-decoration: none;
+}
+
+.nav-bar{
+  position: fixed;
+  top:0 ;
+  bottom: 0;
+  left: 0;
+  width: 5rem;
+  background:#2a2d31;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+  padding-top: 4rem;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: width .2s ease-in-out;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-icon{
+  margin-left: 2rem;
+  font-size: 1.3rem;
+  width:100%;
+  padding:1rem 4rem;
+  transition: all .2s ease-in;
+  opacity: 0;
+  color:white;
+}
+.text-icon:hover{
+  background-color: rgb(109, 108, 108) ;
+}
+
+.icon{
+  margin: 2rem 0;
+  font-size: 2rem;
+  color:rgb(109, 108, 108);
+}
+.total-area{
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.cases-area{
+  width: 100%;
+  height: 100%;
+  background: var(--color-background-primary);
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#map{
+  width: 100%;
+  height: 100%;
+  padding-left: 1rem;
+}
+
+.input-area{
+  margin: 2rem 0;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  position: relative;
+}
+
+.country-input{
+  padding-left:3rem;
+  height: 2.5rem;
+  width: 100%;
+  margin:0;
+  box-shadow: 1px 2px 30px 2px rgba(255, 255, 255, 0.548);
+  border: none;
+  outline:none;
+  border-radius:100px;
+
+}
+
+.submit-btn{
+  position: absolute;
+  left:0;
+  height: 2.5rem;
+  width: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  border:none;
+  border-radius:50%;
+  background-color:transparent;
+}
+.submit-btn:focus{
+  outline:none;
+}
+.world-data
+{
+  color:var(--color-text);
+  width:50rem;
+  padding:2rem;
+  display:flex;
+  align-items: center;
+  justify-content:space-evenly;
+  margin-top:10px;
+}
+.cases
+{
+
+  height: 150px ;
+  width: 20%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  transition: all .3s;
+  padding:1rem;
+  background-color: var(--color-background-primary);
+  border-radius:10px;
+}
+
+.confirmed-cases{
+  color:red;
+
+}
+.confirmed-cases:hover{
+  background-color:#ff000021;
+}
+.active-cases{
+  color:cyan;
+}
+.active-cases:hover{
+  background-color: rgba(0, 255, 255, 0.151);
+}
+.recovered-cases{
+  color:lightgreen;
+}
+.recovered-cases:hover{
+  background-color: rgba(11, 182, 11, 0.137);
+}
+.deceased-cases{
+  color:grey;
+}
+.deceased-cases:hover{
+  background-color:rgba(0, 0, 0, 0.116);
+}
+.case-heading
+{
+  font-size:1.2rem;
+  margin-bottom: .5rem;
+  font-weight:150;
+}
+.case-value
+{
+  font-size:1rem;
+}
+
+
+#description {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+#infowindow-content .title {
+  font-weight: bold;
+}
+
+#infowindow-content {
+  display: none;
+}
+
+#map #infowindow-content {
+  display: inline;
+}
+
+.pac-card {
+  margin: 10px 10px 0 0;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: Roboto;
+}
+
+#pac-container {
+  padding-bottom: 12px;
+  margin-right: 12px;
+}
+
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
