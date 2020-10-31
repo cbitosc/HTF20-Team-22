@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coronavirus Outbreak In World</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="nav-bar" id="nav">
+    <div class="container">
+      <i class="fas fa-home icon"></i>
+      <a href="index.html" class="text-icon" id="text-icon">Home</a>
+    </div>
+    <div class="container">
+      <i class="fas fa-book icon"></i>
+      <a href="index2.html" class="text-icon" id="text-icon" style="opacity: 0;">Graph</a>
+    </div>
+    <div class="container">
+      <i class="fas fa-question-circle icon"></i>
+      <a href="index3.html" class="text-icon" id="text-icon">About</a>
+    </div>
+  </div>
+  <!-- <div class="nav-extra" id="nav-extra"></div> -->
+
+  <!-- map+cases -->
+  <div class="total-area">
+
+    <!-- normal area for cases -->
+    <div class="cases-area">
+      <h1>Team 22 Tracer</h1>
+      <div class="input-area">
+        <input type="text"  id="country-input" class="country-input">
+        <button class="submit-btn" id="submit-btn"><i class="fas fa-search"></i></button>
+      </div>
+
+      <ul class="world-data">
+          <div class="confirmed-cases cases">
+            <h4 class="case-heading">Confirmed</h4>
+            <p class="case-value" id="confirmed">--</p>
+        </div>
+        <div class="active-cases cases">
+            <h4 class="case-heading">Active</h4>
+            <p class="case-value" id="active">--</p>
+        </div>
+        <div class="recovered-cases cases">
+            <h4 class="case-heading">Recovered</h4>
+            <p class="case-value" id="recovered">--</p>
+        </div>
+        <div class="deceased-cases cases">
+            <h4 class="case-heading">Deceased</h4>
+            <p class="case-value" id="deceased">--</p>
+        </div>
+      </ul>
+    </div>
+    </div>
+    <!-- maps -->
+    <div id="map"></div>
+    <div class="pac-card" id="pac-card">
+      <div id="pac-container">
+        <input id="pac-input" type="text" placeholder="Enter a location" />
+      </div>
+    </div>
+    <div id="map"></div>
+    <div id="infowindow-content">
+      <img src="" width="16" height="16" id="place-icon" />
+      <span id="place-name" class="title"></span><br />
+      <span id="place-address"></span>
+    </div>
+
+
+</body>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSdJwCLjXwIH13M_T988PjRQX8N2KXLP0&callback=initMap"
+        type="text/javascript"></script>
+<script src="./scripts/script.js"></script>
+<script src="https://kit.fontawesome.com/cebedaac72.js" crossorigin="anonymous"></script>
+</html>
